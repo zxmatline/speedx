@@ -1,0 +1,176 @@
+/* CSS Document */
+
+.loginBox{
+	height:40px;	
+	background-color:#00a2ca;
+}
+
+.login{
+	height:40px;
+	padding-top:7px;	
+	color:white;	
+}
+
+.login span{
+	padding-left:10px;
+	padding-right:10px;
+	border-right:1px #2bcdf4 solid;
+	border-left:1px #0685a4 solid;		
+	font-size:16px;	
+	letter-spacing:2px;	
+	vertical-align:middle;
+}
+
+.login span a{
+	text-decoration:none;
+	cursor:pointer;
+	color:white;
+
+}
+
+.login span a:hover{
+	color:#0C5A72;
+}			
+
+.logoBox{
+	height:90px;
+}
+
+.logo{
+	display:block;
+	height:87px;
+	width:389px;
+	background:url(publicImages/logo.gif) top left no-repeat;
+}			
+
+.logo-col{
+	display:inline-table;
+	padding:0px;
+	margin:0px;
+}
+
+.logo-col-left{
+	width:450px;
+}
+
+.logo-col-middle{
+	width:610px;
+	padding-left:150px;
+	padding-top:80px;
+}
+
+.logo-col-middle span{
+	padding-left:10px;
+	padding-right:10px;
+	border-right:1px #868686 solid;
+	border-left:1px #868686 solid;		
+}
+
+.logo-col-middle span a{
+	text-decoration:none;
+	font-size:16px;
+	color:#098bab;
+}
+.logo-col-middle span a:hover{
+	text-decoration:underline;
+	color:#51b9d3;
+	cursor:pointer;
+}
+
+.logo-col-right{
+	width:150px;
+	padding-left:10px;
+	padding-top:70px;
+}
+
+.sliderContentBox{
+	border:1px solid gray;	
+}
+
+
+
+.mainBox{
+	background-color:#E0E0E0;
+}
+
+.mainBox-left{
+	width:800px;
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
+	vertical-align:top;	
+}
+
+.mainBox-right{
+	width:400px;
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
+	vertical-align:top;	
+}
+
+.block-one{
+	padding:5px;
+	padding-top:10px;
+}
+
+.block-title{
+	margin-top:20px;
+	border-bottom:1px solid gray;
+}
+
+.xueliImportent{
+	padding-top:20px;
+	padding-left:20px;
+}
+.xueliImportent div{
+	display:inline-block;
+	padding-right:10px;
+	padding-left:10px;
+}
+
+.webFooter{	
+	background-color:#00a2ca;
+}
+
+.footerTag{
+	width:750px;
+	margin:0 auto;
+	padding-top:20px;
+}
+.footerTag a{
+	font-size:15px;
+	color:#c8c8c8;
+	text-decoration:none;
+	padding:5px 15px;
+}
+
+.footerTag a:hover{
+	color:white;
+}
+
+.footerWeixinBox{
+	width:600px;
+	margin:0 auto;
+	padding-top:30px;
+}
+
+.footerWeixin{
+	display:inline-block;
+	width:120px;
+	height:120px;
+	padding-right:10px;
+	margin:0px;
+	vertical-align:top;
+}
+
+.footerAboutUs{
+	display:inline-block;
+	vertical-align:bottom;
+}
+
+.footerAboutUs p{
+	color:white;
+	line-height:25px;
+}
+

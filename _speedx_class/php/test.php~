@@ -1,0 +1,3 @@
+<?php
+echo "hello world 中国";
+echo "this is a test";

@@ -1,0 +1,143 @@
+/* CSS Document */
+*{
+	font-family:"微软雅黑","宋体","宋体","Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size:14px;
+	margin:0px;
+	padding:0px;
+}
+
+
+/*全屏设置*/
+.fullScreen{
+	display:block;
+	height:auto;	
+}
+/*页宽设置*/
+.webSize{
+	width:1200px;
+	margin:0 auto;
+	padding:0px;
+}
+/*页面分格*/
+.grideTable{
+	border-collapse:collapse; margin:0 auto;
+}
+/*上下页块间距*/
+.spacebar-5{display: bloblock;height:5px;}
+.spacebar-10{display: bloblock;height:10px;}
+.spacebar-15{display: bloblock;height:15px;}
+.spacebar-20{display: bloblock;height:20px;}
+.spacebar-25{display: bloblock;height:25px;}
+.spacebar-30{display: bloblock;height:30px;}
+
+/*页面分格边框*/
+.outline-g{border:1px solid green;}
+.outline-r{border:1px solid red;}
+.outline-b{border:1px solid gray;}
+
+/*整体页面背景色*/
+.backColor{
+	background-color:white;
+}
+/*页块居中*/
+.center {
+  width: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*行内块设置*/
+.inlineBlock{
+	display:inline-block;	
+}
+/*动态块鼠标经过时的样式设置*/
+.activeBlock {
+	width: 100%;
+	margin: 30px auto;	 
+}
+
+.activeBlock ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	border: 1px solid #eee;
+}
+
+.activeBlock ul:after {
+	content: '';
+	clear: both;
+	display: block;
+	/*width: 100%;*/
+}
+
+.activeBlock ul li {
+	float: left;
+	transition: all .2s;
+	/*transition-delay: 1s*/
+	width: 25%;
+	height: 520px;
+	border-right: 1px solid #ccc;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.activeBlock ul li h2 {
+	font-size: 20px;
+	text-align: center;
+}
+
+.activeBlock ul li h3 {
+	font-size: 18px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+
+.activeBlock ul li a {
+	display: block;
+	width: 90%;
+	margin: 10px auto;
+	/*height: 60px;*/
+	/*line-height: 60px;*/
+	text-align: center;
+	background: #DA6D0E;
+	border-radius: 10px;
+	transition: all .5s;
+	position: relative;
+	padding: 5px 0;
+	text-decoration: none;
+	color: #fff;
+}
+
+.activeBlock ul li a span {
+	display: block;
+}
+
+
+.activeBlock ul li a:hover {
+	box-shadow: 0px 1px 10px rgba(0,0,0,.8);
+}
+
+.activeBlock ul li p {
+	text-align: left;
+	color: #111;
+	padding-top:10px;
+	text-indent:2em;
+}
+
+.activeBlock ul li:nth-child(4) {
+	border-right: none;
+}
+
+.activeBlock ul li:hover{
+	/*background: #efefef;*/
+	box-shadow: 0px 4px 20px rgba(0,0,0,.3);
+	border-radius: 10px;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	border: none;
+	/*border: 1px solid #ccc;*/
+	background: #fff;
+}
+/*******************************/
+

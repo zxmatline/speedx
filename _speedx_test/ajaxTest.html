@@ -1,0 +1,351 @@
+     <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<div>这是结果：</div>
+	
+	<script src="_speedx_plugins/jquery/jquery-3.0.0.min.js" ></script>
+	
+	<script type="text/javascript">
+		$(function(){
+			
+		})
+	</script>
+	<script type="text/javascript">
+		'use strict'
+		var a = 0.3;
+		var b = 0.4;
+		var num;
+/*		
+		var arr = [1,2,3];
+		for( var i in arr){
+			document.write(i + "<br/>");
+		}
+		var fun1 = function(num1,num2){
+			return num1 + num2;
+		}		
+		var fun2 = fun1;
+*/
+		
+/*		
+		function createComparisonFunction(propertyName){
+			return function(object1,object2){
+				var value1 = object1[propertyName];
+				var value2 = object2[propertyName];
+				if(value1 < value2){
+					return -1;
+				}else if(value1 > value2){
+					return 1;
+				}else {
+					return 0;
+				}
+			};
+		}
+		
+		var data = [{name:"Zachary",age:28},{name:"Nicholas",age:29}];
+		data.sort(createComparisonFunction("name"));
+		alert(data[0].name);
+		data.sort(createComparisonFunction("age"));
+		alert(data[0].name);
+*/	
+		
+/*		
+		var obj = {
+			name:"text1",
+			age : 29,
+			add:function(n1,n2){return n1 + n2;}
+		}
+		for(var o in obj){
+			document.write(o + "<br/>");
+		}
+*/		
+/*		
+		var person = {};
+		Object.defineProperty(person,"name",{
+			writable:false,
+			value:"myname"
+		});
+		
+		//alert(person.name);
+		person.name = "my new Name";
+		document.write(person.name + "<br/>");
+		var tp = Object.getOwnPropertyDescriptor(person,"name");
+		alert(tp.value);
+*/	
+		
+/*		
+		function person(name,age,addr){
+			this.name = name;
+			this.age = age;
+			this.addr = addr;
+			this.callName = function(){
+				document.write(this.name + "<br/>");
+			}
+		}
+		
+		var o = new Object();
+		o.name = "朱小明";
+		person.call(o,"zxm",20,"wuhu");
+		o.callName();
+		document.write(o.age + "<br/>");
+*/		
+		//var resault = document.getElementsByTagName("div");
+		//resault.text = a + b;
+		//alert(null == undefined);
+/*	
+		function person(){};
+		var fri1 = new person();
+		person.prototype.name = "whxinteng";
+		person.prototype.age = 30;
+		person.prototype.addr = "whstreet";
+		person.prototype.sayName = function(){document.write(this.name + "<br/>");};
+	
+		person.prototype = {
+			constructor:person,
+			name : "xinteng",
+			age:20,
+			addr: "street wuhu",
+			sayadd:function(){
+				document.write(this.addr);
+			}
+		};
+	
+		var fri2 = new person();
+		
+		fri1.sayName();
+		document.writeln(fri2.age);
+*/	
+		
+/*		
+		var val = new Array();
+		var test = new Array();
+		test = ["张三","lisi","wanwu"];
+		val.push.apply(val,test);
+		document.write(val.join("|"));
+*/	
+		
+/*	
+		function superType(){
+			this.property = "这是父类属性";
+			this.friends = ["张三","李四","王二","麻子"];
+		};
+		superType.prototype.getSuperValue = function(){
+			return this.property;
+		};
+		function subType(){
+			this.subProperty = "这是子类属性";	
+		};
+		subType.prototype = new superType();
+		subType.prototype.getSubValue = function(){
+			return this.subProperty;	
+		};
+		
+		var instance1 = new subType();
+		var instance2 = new subType();
+		document.write(instance1.getSuperValue() + "<br/>");
+		document.write(instance1.subProperty + "<br/>");
+		document.write(instance2.getSubValue() + "<br/>");
+		document.write(instance2.property + "<br/>");
+		
+		instance1.friends.push("小明");
+		document.write(instance2.friends.join("|") + "<br/>");
+*/	
+		
+/*		
+		var ins1 = ["张三","李四","王二","麻子"];
+		var ins2 = ins1;
+		ins1.push("xiaoming");
+		document.write(ins2.join("|"));
+*/	
+	
+/*		
+		var person = {
+			name : "张三",
+			friends : ["张三","李四","王二","麻子"]			
+		}
+		
+		var anotherPerson = Object.create(person,{
+			name:{
+				value:"xinteng"
+			}
+		});
+		
+		document.write(anotherPerson.name + "<br/>");
+		document.write(person.name + "<br/>");
+*/	
+	
+/*		
+		friends = ["张三","李四","王二","麻子"];
+		document.write(friends.toString() + "<br/>");
+		document.write(friends.valueOf() + "<br/>");
+		document.write(friends + "<br/>");
+		
+		friends.forEach(function(item,index,array){
+			document.write(item + "<br/>");
+			document.write(index + "<br/>");
+			document.write(array + "<br/>");
+		});
+*/	
+	
+/*
+		function person(){};
+		person.prototype.name = "张三";
+		person.prototype.age = 29;
+		var person1 = new person();
+		alert(Object.getPrototypeOf(person1).age);
+		alert(Object.getPrototypeOf(person1).constructor.prototype.age);
+*/	
+	
+/*		
+		function person(){};
+		var friend = new person();
+		person.prototype = {
+			constructor:person,
+			name:"zxm",
+			age:29,
+			sayName:function(){
+				document.write(this.name);
+			}
+		};
+		
+		Object.getPrototypeOf(friend).constructor.prototype.sayName();
+*/	
+		
+		
+/*		
+		function object(o){
+			function F(){};
+			F.prototype = o;
+			return F;
+		}
+		
+		var person = {
+			name : "zxm",
+			fa:["zs","ls","ww"]
+		};
+		
+		//var anotherPerson = Object.create(person);
+		var anotherPerson = object(person);
+		anotherPerson.name = "xinteng";
+		anotherPerson.fa.push("wer");
+		
+		document.write(person.fa);
+*/		
+		
+/*		
+		var person = null;
+		
+		(function(){
+			var name = "";
+			person = function(value){
+				name = value;
+			};
+			person.prototype.getName = function(){
+				return name;
+			};
+			person.prototype.setName = function(value){
+				name = value;
+			};
+		})();
+		
+		var person1 = new person("张三");
+		document.write(person1.getName() + "<br/>");
+		person1.setName("李四");
+		document.write(person1.getName() + "<br/>");
+		
+		var person2 = new person("王二");
+		document.write(person1.getName() + "<br/>");
+*/		
+		
+/*		
+		var curl = document.URL;
+		var domain = document.domain;
+		var refer = document.referrer;
+		
+		document.write(curl + "<br/>");
+		document.write(domain + "<br/>");
+		document.write(refer + "<br/>");
+*/		
+		
+/*		
+		var div = document.getElementsByTagName("div");
+		var newTextNode = document.createTextNode("<strong>这是新的内容</strong>");
+
+		div[0].innerText = "<strong>这是新的内容</strong>";
+		//div.insertNode(newTextNode);
+		//div.innerHTML = "<strong>这是新的内容</strong>";
+		//alert(div.childNodes);
+		
+		console.log("this is  console messages");
+		
+*/	
+		
+		
+	
+		function createXHR(){
+			var xhrHander = new XMLHttpRequest();
+			return xhrHander;
+		};
+		
+		function alertln($content){
+			document.write($content + "<br/>");
+		}
+		
+		var xhr = createXHR();
+		
+/*			
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState == 4){
+				if(xhr.status == 200 ){
+					var Headers = xhr.getAllResponseHeaders();
+					alertln(Headers);
+				}else{
+					alertln("请求没有成功" + xhr.status);
+				}		
+			}	
+		};
+		
+		xhr.open("get","xhrRequest.php?MyHeader=MyValue",true);
+		//xhr.setRequestHeader("MyHeader","MyValue");
+		xhr.send(null);
+*/		
+		
+/*		
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState == 4){
+				if(xhr.status == 200){
+					alertln(xhr.responseText);
+				}
+			}
+		}	
+		
+		xhr.open("post",'xhrRequest.php?timeStamp='+ new Date().getTime()+ '&c=18',true);
+		xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		xhr.send("a=6&b=9");
+*/		
+		
+		var buffer = new ArrayBuffer(20);
+		var bytes = buffer.byteLength;
+		//alert(bytes);
+		
+		setTimeout(function(){
+			var div = document.getElementById("myDiv");
+			left = parseInt(div.style.left) + 5；
+			div.style.left = left + "px";
+			
+			if(leflt < 200){
+				setTimeout(arguments.callee,50);
+			}
+		},50);
+		
+		
+		
+		
+	</script>
+	
+</body>
+</html>
